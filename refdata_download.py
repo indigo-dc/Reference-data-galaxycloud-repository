@@ -14,7 +14,7 @@ LOG_FILENAME = "/tmp/refdata_download.log"
 
 def parse_cli_options():
   parser = argparse.ArgumentParser(description='Download Reference Data', formatter_class=argparse.RawTextHelpFormatter)
-  parser.add_argument( '-i', dest='genome_list', help='')
+  parser.add_argument( '-i', '--input',  dest='genome_list', help='')
   parser.add_argument( '-o', '--outdir', default='/refdata', dest='outdir', help='')
   parser.add_argument( '-s', '--space', default='elixir-italy.galaxy.refdata', dest='space', help='')
   return parser.parse_args()
