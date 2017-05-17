@@ -1,0 +1,5 @@
+---
+- hosts: loalhost
+  connection: local
+  roles:
+    - { role: mtangaro.cvmfs-server }
