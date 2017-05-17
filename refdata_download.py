@@ -9,13 +9,14 @@ import urllib2
 import logging
 import pycurl
 
-REFDATA_ROOT_DIR='/refdata/elixir-italy.galaxy.refdata'
 GALAXY_USER='galaxy'
 LOG_FILENAME = "/tmp/refdata_download.log"
 
 def parse_cli_options():
   parser = argparse.ArgumentParser(description='Download Reference Data', formatter_class=argparse.RawTextHelpFormatter)
   parser.add_argument( '-i', dest='genome_list', help='')
+  parser.add_argument( '-o', '--outdir', default='/refdata', dest='outdir', help='')
+  parser.add_argument( '-s', '--space', default='elixir-italy.galaxy.refdata', dest='space', help='')
   return parser.parse_args()
 
 def load_input_file(refdata_list_file = "genome-list.yml"):
@@ -56,11 +57,13 @@ def download():
   logging.debug('>>> Reference Data download log file.')
 
   #print li
-  create_dir(REFDATA_ROOT_DIR)
+  outdir=options.outdir + '/' + options.space
+  print outdir
+  create_dir(outdir)
   recas_url='http://cloud.recas.ba.infn.it:8080/v1/AUTH_3b4918e0a982493e8c3ebcc43586a2a8/test_ref'
   
   for i in li['genomes']:
-    genome_dir = REFDATA_ROOT_DIR+'/'+i['genome']
+    genome_dir = outdir +'/'+i['genome']
     #print genome_dir
     create_dir(genome_dir)
     os.chdir(genome_dir)
