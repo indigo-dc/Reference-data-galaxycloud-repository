@@ -45,8 +45,9 @@ def write_data(name, url):
       curl.close()
       fp.close()
   except (urllib2.HTTPError):
-    logging.debug('WARNING: Reference Genome NOT FOUND. SKIPPING!!!')
+    logging.debug('WARNING: %s NOT FOUND. SKIPPING!!!', url)
     pass
+
 
 def download():
   options = parse_cli_options()
@@ -67,21 +68,33 @@ def download():
     #print genome_dir
     create_dir(genome_dir)
     os.chdir(genome_dir)
+    try:
+      if i['others']:
+        for j in i['others']:
+          url_1 = recas_url + '/' + i['genome'] + '/' + j['other'] 
+          print url_1
+          #write_data(j['other'], url_1)
+    except KeyError:
+      print 'No others section!'
 
-    for j in i['others']:
-      url_1 = recas_url + '/' + i['genome'] + '/' + j['other'] 
-      #print url_1
-      write_data(j['other'], url_1)
+    try:
+      if i['tools']:
+        for j in i['tools']:
+          #os.chdir(genome_dir)
+          tool_dir = genome_dir + '/' + j['tool']
+          create_dir(tool_dir)
 
-    for j in i['tools']:
-      #os.chdir(genome_dir)
-      tool_dir = genome_dir + '/' + j['tool']
-      create_dir(tool_dir)
+          for k in j['parts']:
+            os.chdir(tool_dir)
+            url_2 = recas_url+'/'+i['genome']+'/'+j['tool']+'/'+k['part']
+            print url_2
+            write_data(k['part'], url_2)
 
-      for k in j['parts']:
-        os.chdir(tool_dir)
-        url_2 = recas_url+'/'+i['genome']+'/'+j['tool']+'/'+k['part']
-        write_data(k['part'], url_2)
+    except KeyError:
+      print 'No tool'
+
+
+
 
 if __name__ == "__main__":
   download()
