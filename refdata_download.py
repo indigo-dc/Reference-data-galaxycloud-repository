@@ -84,7 +84,7 @@ def download():
       if i['others']:
         for j in i['others']:
           url_1 = recas_url + '/' + i['genome'] + '/' + j['other'] 
-          print url_1
+          #print url_1
           write_data(j['other'], url_1)
     except KeyError:
       print 'No others section!'
@@ -99,7 +99,7 @@ def download():
           for k in j['parts']:
             os.chdir(tool_dir)
             url_2 = recas_url+'/'+i['genome']+'/'+j['tool']+'/'+k['part']
-            print url_2
+            #print url_2
             write_data(k['part'], url_2)
 
     except KeyError:
