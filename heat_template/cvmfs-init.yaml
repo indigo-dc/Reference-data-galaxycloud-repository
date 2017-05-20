@@ -1,0 +1,18 @@
+heat_template_version: 2014-10-16
+
+description: setup CernVM-FS Stratum 0 server
+
+resources:
+  vm_os:
+    type: cvmfs.yaml
+    properties:
+      key_name: mtangaro-key
+      vm_name: cvmfs_server
+      image_id:  # ubuntu 16.04
+      instance_type: small #4cpu-4GB-20dsk
+      availability_zone: nova
+      spool_size: 200
+      spool_mountpoint: /var/spool
+      srv_size: 50
+      srv_mountpoint: /srv
+      net_id: fe82ef7b-4bb7-4c1e-b4ec-ec5c1b0c7333 #pub-ip
