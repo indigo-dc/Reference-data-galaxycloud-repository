@@ -28,19 +28,19 @@ parameters:
     type: string
     description: The Availability Zone to launch the instance.
     default: nova
-  vol1_size:
+  spool_size:
     type: number
     description: Size of the volume to be created.
     default: 1
-  vol1_mountpoint:
+  spool_mountpoint:
     type: string
     description: The directory to provide to the user
     default: /var/spool/cvmfs
-  vol2_size:
+  srv_size:
     type: number
     description: Size of the volume to be created.
     default: 1
-  vol2_mountpoint:
+  srv_mountpoint:
     type: string
     description: The directory to provide to the user
     default: /srv/cvmfs
@@ -51,29 +51,29 @@ parameters:
 
 resources:
 
-#  #________________________________
-#  # CernVM-FS software configuration
-#  cvmfs_config:
-#    type: OS::Heat::SoftwareConfig
-#    properties:
-#      group: script
-#      inputs:
-#      - name: vol1_mountpoint
-#      - name: vol1_volid
-#      - name: vol2_mountpoint
-#      - name: vol2_volid
-#      config: { get_file: setup.sh }
+  #________________________________
+  # CernVM-FS software configuration
+  cvmfs_config:
+    type: OS::Heat::SoftwareConfig
+    properties:
+      group: script
+      inputs:
+      - name: spool_mountpoint
+      - name: spool_volid
+      - name: srv_mountpoint
+      - name: srv_volid
+      config: { get_file: setup.sh }
 
-#  cvmfs_deployment:
-#    type: OS::Heat::SoftwareDeployment
-#    properties:
-#      config: {get_resource: cvmfs_config}
-#      server: {get_resource: cvmfs_server}
-#      input_values:
-#        vol1_mountpoint: { get_param: vol1_mountpoint }
-#        vol1_volid: { get_resource: vol1_cinder_volume }
-#        vol2_mountpoint:  { get_param: vol2_mountpoint }
-#        vol2_volid: { get_resource: vol2_cinder_volume }
+  cvmfs_deployment:
+    type: OS::Heat::SoftwareDeployment
+    properties:
+      config: {get_resource: cvmfs_config}
+      server: {get_resource: cvmfs_server}
+      input_values:
+        spool_mountpoint: { get_param: spool_mountpoint }
+        spool_volid: { get_resource: spool_cinder_volume }
+        srv_mountpoint:  { get_param: srv_mountpoint }
+        srv_volid: { get_resource: srv_cinder_volume }
 
   #__________________________________
   # cvmfs server deployment
@@ -88,43 +88,35 @@ resources:
       networks:
         - network: { get_param: net_id }
       security_groups: [ { get_resource: server_security_group } ]
-      user_data:
-        str_replace:
-          template: { get_file: setup.sh }
-          params:
-            $vol1_mountpoint: { get_param: vol1_mountpoint }
-            $vol1_volid: { get_resource: vol1_cinder_volume }
-            $vol2_mountpoint:  { get_param: vol2_mountpoint }
-            $vol2_volid: { get_resource: vol2_cinder_volume }
-      user_data_format: RAW
+      user_data_format: SOFTWARE_CONFIG
 
   #__________________________________
   # /var/spool/cvmfs volume
-  vol1_cinder_volume:
+  spool_cinder_volume:
     type: OS::Cinder::Volume
     properties:
-      size: { get_param: vol1_size }
+      size: { get_param: spool_size }
       availability_zone: { get_param: availability_zone }
 
-  vol1_volume_attachment:
+  spool_volume_attachment:
     type: OS::Cinder::VolumeAttachment
     properties:
-      volume_id: { get_resource: vol1_cinder_volume }
+      volume_id: { get_resource: spool_cinder_volume }
       instance_uuid: { get_resource: cvmfs_server }
       mountpoint: null
 
   #__________________________________
   # /srv/cvmfs volume  
-  vol2_cinder_volume:
+  srv_cinder_volume:
     type: OS::Cinder::Volume
     properties:
-      size: { get_param: vol2_size }
+      size: { get_param: srv_size }
       availability_zone: { get_param: availability_zone }
 
-  vol2_volume_attachment:
+  srv_volume_attachment:
    type: OS::Cinder::VolumeAttachment
    properties:
-     volume_id: { get_resource: vol2_cinder_volume }
+     volume_id: { get_resource: srv_cinder_volume }
      instance_uuid: { get_resource: cvmfs_server }
      mountpoint: null
 
@@ -164,4 +156,4 @@ outputs:
     value: { get_param: vm_name }
   volumeUuid:
     description: Resource ID assigned to the newly created volume attached to instance
-    value: { get_resource: vol1_cinder_volume }
+    value: { get_resource: spool_cinder_volume }
