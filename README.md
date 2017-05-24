@@ -24,6 +24,10 @@ Directories
 
 - scripts/
   Scripts to populate cvmfs server.
+    - fast_mount.sh ---------> Mount external volume
+    - refdata_download.py ---> Download reference data
+    - refdata_download.sh ---> Exploit refdata_download.py to recursively download all the reference data
+    - wget_download.sh ------> use wget to download reference data
 
 - lists/
   list files (yaml format) to automatically download reference data
@@ -32,7 +36,7 @@ Directories
 Populate a CernVM-FS Repository (with reference data)
 ----------------------------------------------------
 
-Content Publishing
+### Content Publishing
 ```
   - cvmfs_server transaction <repository name>
   - Install content into /cvmfs/<repository name>
@@ -44,11 +48,36 @@ Once installed on /cvmfs/<repository_name>
 
 ### Reference data download
 
+fast_mount.sh  refdata_download.py  refdata_download.sh  wget_download.sh
+
+- refdata_download.py
+
+  1. install python-pycurl package (sudo apt-get install python-pycurl)
+  2. python refata_download.py -i ../lists/hg19-list.yml -o <directory> -s <cvmfs_repository_name>
+
+- refdata_download.sh
+  ./refdata_download.sh ../lists/list.txt
+
+- wget_download ../lists/wget_list.txt
+
+### Available Reference data
+
+at10-list.yml
+at9-list.yml
+dm2-list.yml
+dm3-list.yml
+hg18-list.yml
+hg19-list.yml
+hg38-list.yml
+mm10-list.yml
+mm8-list.yml
+mm9-list.yml
+sacCer1-list.yml
+sacCer2-list.yml
+sacCer3-list.yml
 
 
-1. install pycurl
 
 
 
-lists/
-------
+
