@@ -76,8 +76,16 @@ sacCer1-list.yml
 sacCer2-list.yml
 sacCer3-list.yml
 
+License
+-------
+
+Apache Licence v2 [2]
+
+http://www.apache.org/licenses/LICENSE-2.0
 
 
+Author Information
+------------------
 
-
+Marco Tanagaro (ma.tangaro_at_ibbe.cnr.it)
 
