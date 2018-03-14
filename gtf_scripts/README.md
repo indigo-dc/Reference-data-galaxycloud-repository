@@ -1,9 +1,9 @@
 Clean gtf files
 ===============
 
-Cleaning method for .gtf file in order to build the rsem indexes
+Clean method for .gtf file in order to build the rsem indexes
 
-1. Rub the script chr_list.py to have the list of chromosome of the .gtf
+1. Run the script chr_list.py to have the list of chromosome of the .gtf
    ```
    python chr_list.py file.gtf
    ```
