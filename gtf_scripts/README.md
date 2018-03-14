@@ -17,3 +17,8 @@ Cleaning method for .gtf file in order to build the rsem indexes
    ```
    python rewrite_gtf.py file.gtf>new_file.gtf
    ```
+
+Author
+------
+
+Pietro Mandreoli
