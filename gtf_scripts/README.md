@@ -8,7 +8,7 @@ Clean method for .gtf file in order to build the rsem indexes
    python chr_list.py file.gtf
    ```
 
-2. Delete the extra-chromosome lines using sed (from command line):
+2. Delete the extra-chromosome lines using sed (using the command line):
    ```
    sed -i ‘/’extra-chromosome’/d’ file.gtf
    ```
