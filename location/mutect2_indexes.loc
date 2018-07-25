@@ -32,5 +32,5 @@
 #is the value stored in the workflow for that parameter. That is why the
 #hg19 entry above looks odd. New genomes can be better-looking.
 #
-GDChg38	hg38	Homo sapiens (hg38)	/cvmfs/elixir-italy.galaxy.refdata/GRCh38.d1.vd1/GRCh38.d1.vd1.fa
+hg38	hg38	Homo sapiens (GDC_hg38)	/cvmfs/elixir-italy.galaxy.refdata/GRCh38.d1.vd1/GRCh38.d1.vd1.fa
 
