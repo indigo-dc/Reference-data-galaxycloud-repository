@@ -46,5 +46,7 @@ hg38	hg38	Homo sapiens (hg38)	/cvmfs/elixir-italy.galaxy.refdata/hg38/bwa_index/
 mm9	mm9	Mus musculus (mm9)	/cvmfs/elixir-italy.galaxy.refdata/mm9/bwa_index/mm9.fa
 mm10	mm10	Mus musculus (mm10)	/cvmfs/elixir-italy.galaxy.refdata/mm10/bwa_index/mm10.fa
 sacCer3	sacCer3	Saccharomyces cerevisiae (sacCer3)	/cvmfs/elixir-italy.galaxy.refdata/sacCer3/bwa_index/sacCer3.fa
-hg38	hg38	Homo sapiens (GDC_hg38)	/cvmfs/elixir-italy.galaxy.refdata/GRCh38.d1.vd1/GRCh38.d1.vd1.fa
+hg38	hg38_gdc	GRCh38.d1.vd1.fa	/cvmfs/elixir-italy.galaxy.refdata/GRCh38.d1.vd1/GRCh38.d1.vd1.fa
+hg38	hg38_bundle	hg38_GATK_bundle	/cvmfs/elixir-italy.galaxy.refdata/index_GATK_bundle/Homo_sapiens_assembly38/Homo_sapiens_assembly38.fasta
+hg19	hg19_bundle	hg19_GATK_bundle	/cvmfs/elixir-italy.galaxy.refdata/index_GATK_bundle/ucsc.hg19/ucsc.hg19.fasta
 	
