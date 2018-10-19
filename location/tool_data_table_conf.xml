@@ -80,4 +80,14 @@
         <columns>value, dbkey, name, path</columns>
         <file path="/cvmfs/elixir-italy.galaxy.refdata/location/rsem_indices.loc" />
     </table>
+ <!-- Locations of mutect2 indexes  -->
+    <table name="mutect2_indexes" comment_char="#">
+        <columns>value, dbkey, name, path</columns>
+        <file path="/cvmfs/elixir-italy.galaxy.refdata/location/mutect2_indexes.loc" />
+    </table>
+ <!-- Locations of muse index  -->
+    <table name="muse_index" comment_char="#">
+        <columns>value, dbkey, name, path</columns>
+        <file path="/cvmfs/elixir-italy.galaxy.refdata/location/muse_index.loc" />
+    </table>
 </tables>
