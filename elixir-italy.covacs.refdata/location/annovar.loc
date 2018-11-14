@@ -1,0 +1,21 @@
+
+#location of humandb the fields are tab delimited 
+db	location	/cvmfs/elixir-italy.covacs.refdata/annovardb/humandb
+
+
+
+#definition of present db name + type(gene_ann, region, filter) the fields are tab delimited
+refGene	gene_ann	
+gnomad_genome	filter	
+exac03	filter
+1000g2015aug	filter
+avsnp150	filter
+clinvar_20180603	filter
+cosmic70	filter
+dbnsfp33a	filter
+esp6500_all	filter
+kaviar_20150923	filter
+knownGene	filter
+mitimpact2	filter
+		
+#for more info about the databases http://annovar.openbioinformatics.org/en/latest/user-guide/download/#-for-filter-based-annotation
