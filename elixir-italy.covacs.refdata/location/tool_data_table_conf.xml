@@ -100,4 +100,30 @@
         <columns>value, name, url</columns>
         <file path="tool-data/biom_simple_display.loc" />
     </table>
+<!-- BEGIN ELIXIR-ITA customization-->
+<!-- Location of bed-file for covacs -->
+    <table name="covacs_bed" comment_char="#">
+        <columns> value, dbkey, name, path</columns>
+        <file path="/cvmfs/elixir-italy.covacs.refdata/location/covacs_bed.loc" />
+    </table>
+<!-- Location of index file  for covacs gatk wrapper -->
+    <table name="covacs_gatk_indexes" comment_char="#">
+        <columns> value, dbkey, name, path</columns>
+        <file path="/cvmfs/elixir-italy.covacs.refdata/location/covacs_gatk_indexes.loc" />
+    </table>
+<!-- Location of vcf-file for covacs VariantRecalibrator -->
+    <table name="covacs_vcf" comment_char="#">
+        <columns> value, name, path</columns>
+        <file path="/cvmfs/elixir-italy.covacs.refdata/location/covacs_vcf.loc" />
+    </table>
+<!--location of bwa index-->
+    <table name="bwa_mem_indexes" comment_char="#">
+        <columns>value, dbkey, name, path</columns>
+        <file path="/cvmfs/elixir-italy.covacs.refdata/location/bwa_mem_index.loc" />
+    </table>
+<!-- Location of annovar_elixir loc file -->
+    <table name="annovar" comment_char="#">
+        <columns> value, type, path</columns>
+        <file path="/cvmfs/elixir-italy.covacs.refdata/location/annovar.loc" />
+    </table>
 </tables>
