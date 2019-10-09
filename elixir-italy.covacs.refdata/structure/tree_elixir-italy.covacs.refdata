@@ -1,0 +1,577 @@
+├── annovardb
+│   ├── annotate_variation.pl
+│   ├── dwl_db_annovar_terminal.sh
+│   └── humandb
+│       ├── annovar_downdb.log
+│       ├── hg19_1000g2015aug.zip
+│       ├── hg19_AFR.sites.2015_08.txt
+│       ├── hg19_AFR.sites.2015_08.txt.idx
+│       ├── hg19_ALL.sites.2015_08.txt
+│       ├── hg19_ALL.sites.2015_08.txt.idx
+│       ├── hg19_AMR.sites.2015_08.txt
+│       ├── hg19_AMR.sites.2015_08.txt.idx
+│       ├── hg19_avsnp150.txt
+│       ├── hg19_avsnp150.txt.idx
+│       ├── hg19_clinvar_20180603.txt
+│       ├── hg19_clinvar_20180603.txt.idx
+│       ├── hg19_cosmic70.txt
+│       ├── hg19_cosmic70.txt.idx
+│       ├── hg19_dbnsfp33a.txt
+│       ├── hg19_dbnsfp33a.txt.idx
+│       ├── hg19_EAS.sites.2015_08.txt
+│       ├── hg19_EAS.sites.2015_08.txt.idx
+│       ├── hg19_esp6500_all.txt
+│       ├── hg19_esp6500_all.txt.idx
+│       ├── hg19_EUR.sites.2015_08.txt
+│       ├── hg19_EUR.sites.2015_08.txt.idx
+│       ├── hg19_exac03.txt
+│       ├── hg19_exac03.txt.idx
+│       ├── hg19_gnomad_genome.txt
+│       ├── hg19_gnomad_genome.txt.idx
+│       ├── hg19_kaviar_20150923.txt
+│       ├── hg19_kaviar_20150923.txt.idx
+│       ├── hg19_kgXref.txt
+│       ├── hg19_knownGeneMrna.fa
+│       ├── hg19_knownGene.txt
+│       ├── hg19_mitimpact2.txt
+│       ├── hg19_mitimpact2.txt.idx
+│       ├── hg19_refGeneMrna.fa
+│       ├── hg19_refGene.txt
+│       ├── hg19_refGeneVersion.txt
+│       ├── hg19_SAS.sites.2015_08.txt
+│       └── hg19_SAS.sites.2015_08.txt.idx
+├── at10
+│   ├── bowtie2
+│   │   ├── genome.1.bt2
+│   │   ├── genome.2.bt2
+│   │   ├── genome.3.bt2
+│   │   ├── genome.4.bt2
+│   │   ├── genome.rev.1.bt2
+│   │   └── genome.rev.2.bt2
+│   ├── bowtie-index
+│   │   ├── genome.1.ebwt
+│   │   ├── genome.2.ebwt
+│   │   ├── genome.3.ebwt
+│   │   ├── genome.4.ebwt
+│   │   ├── genome.rev.1.ebwt
+│   │   └── genome.rev.2.ebwt
+│   ├── bwa_index
+│   │   ├── genome.fa.amb
+│   │   ├── genome.fa.ann
+│   │   ├── genome.fa.bwt
+│   │   ├── genome.fa.pac
+│   │   └── genome.fa.sa
+│   ├── genome.2bit
+│   ├── genome.fa
+│   └── TAIR10_GFF3_genes.gff
+├── at9
+│   ├── bowtie2
+│   │   ├── genome.1.bt2
+│   │   ├── genome.2.bt2
+│   │   ├── genome.3.bt2
+│   │   ├── genome.4.bt2
+│   │   ├── genome.rev.1.bt2
+│   │   └── genome.rev.2.bt2
+│   ├── bowtie-index
+│   │   ├── genome.1.ebwt
+│   │   ├── genome.2.ebwt
+│   │   ├── genome.3.ebwt
+│   │   ├── genome.4.ebwt
+│   │   ├── genome.rev.1.ebwt
+│   │   └── genome.rev.2.ebwt
+│   ├── bwa_index
+│   │   ├── genome.fa.amb
+│   │   ├── genome.fa.ann
+│   │   ├── genome.fa.bwt
+│   │   ├── genome.fa.pac
+│   │   └── genome.fa.sa
+│   ├── genome.2bit
+│   ├── genome.fa
+│   └── TAIR9_GFF3_genes.gff
+├── bed_file_covacs
+│   ├── download_bed.txt
+│   ├── nexterarapidcapture_exome_targetedregions.bed
+│   ├── nexterarapidcapture_expandedexome_targetedregions.bed
+│   ├── nohup.out
+│   ├── S0274956_Padded.bed
+│   ├── S04380110_Padded.bed
+│   ├── S04380219_Padded.bed
+│   ├── S06588914_Padded.bed
+│   ├── S0684402_Padded.bed
+│   ├── S07084713_Padded.bed
+│   ├── S07604514_Padded.bed
+│   ├── S07604624_Padded.bed
+│   ├── S07604715_Padded.bed
+│   ├── truseq-exome-targeted-regions-manifest-v1-2.bed
+│   ├── truseq-rapid-exome-targeted-regions-manifest-v1-2.bed
+│   └── wget_illumina.txt
+├── covacs_vcf
+│   ├── 1000G_omni2.5.hg19.sites.vcf
+│   ├── 1000G_omni2.5.hg19.sites.vcf.idx
+│   ├── 1000G_phase1.snps.high_confidence.hg19.sites.vcf.idx
+│   ├── 1000G_phase1.snps.high_confidence.hg19.vcf
+│   ├── dbsnp_138.hg19.vcf
+│   ├── dbsnp_138.hg19.vcf.idx
+│   ├── hapmap_3.3.hg19.sites.vcf
+│   └── hapmap_3.3.hg19.sites.vcf.idx
+├── dm2
+│   └── liftover
+│       └── dm2ToDm3.over.chain
+├── dm3
+│   ├── bowtie2
+│   │   ├── genome.1.bt2
+│   │   ├── genome.2.bt2
+│   │   ├── genome.3.bt2
+│   │   ├── genome.4.bt2
+│   │   ├── genome.rev.1.bt2
+│   │   └── genome.rev.2.bt2
+│   ├── bowtie-index
+│   │   ├── dm3.1.ebwt
+│   │   ├── dm3.2.ebwt
+│   │   ├── dm3.3.ebwt
+│   │   ├── dm3.4.ebwt
+│   │   ├── dm3.rev.1.ebwt
+│   │   └── dm3.rev.2.ebwt
+│   ├── bwa_index
+│   │   ├── dm3.fa.amb
+│   │   ├── dm3.fa.ann
+│   │   ├── dm3.fa.bwt
+│   │   ├── dm3.fa.fai
+│   │   ├── dm3.fa.pac
+│   │   ├── dm3.fa.rbwt
+│   │   ├── dm3.fa.rpac
+│   │   ├── dm3.fa.rsa
+│   │   └── dm3.fa.sa
+│   ├── dm3.2bit
+│   ├── dm3.gtf
+│   ├── genome.fa
+│   ├── genome.fa.fai
+│   ├── liftover
+│   │   ├── dm3ToDm2.over.chain
+│   │   └── dm3ToDm6.over.chain
+│   └── rsem
+│       ├── dm3.1.ebwt
+│       ├── dm3.2.ebwt
+│       ├── dm3.3.ebwt
+│       ├── dm3.4.ebwt
+│       ├── dm3.chrlist
+│       ├── dm3.grp
+│       ├── dm3.idx.fa
+│       ├── dm3.n2g.idx.fa
+│       ├── dm3.rev.1.ebwt
+│       ├── dm3.rev.2.ebwt
+│       ├── dm3.seq
+│       ├── dm3.ti
+│       └── dm3.transcripts.fa
+├── dm6
+│   ├── bowtie2
+│   │   ├── genome.1.bt2
+│   │   ├── genome.2.bt2
+│   │   ├── genome.3.bt2
+│   │   ├── genome.4.bt2
+│   │   ├── genome.rev.1.bt2
+│   │   └── genome.rev.2.bt2
+│   ├── bowtie-index
+│   │   ├── dm6.1.ebwt
+│   │   ├── dm6.2.ebwt
+│   │   ├── dm6.3.ebwt
+│   │   ├── dm6.4.ebwt
+│   │   ├── dm6.rev.1.ebwt
+│   │   └── dm6.rev.2.ebwt
+│   ├── bwa_mem_index
+│   │   ├── dm6.fa.amb
+│   │   ├── dm6.fa.ann
+│   │   ├── dm6.fa.bwt
+│   │   ├── dm6.fa.pac
+│   │   └── dm6.fa.sa
+│   ├── dm6.2bit
+│   ├── dm6.fa
+│   ├── dm6.gtf
+│   ├── Drosophila_melanogaster.BDGP6.91.gff3
+│   ├── liftover
+│   │   └── dm6ToDm3.over.chain
+│   └── rsem
+│       ├── dm6.1.ebwt
+│       ├── dm6.2.ebwt
+│       ├── dm6.3.ebwt
+│       ├── dm6.4.ebwt
+│       ├── dm6.chrlist
+│       ├── dm6.grp
+│       ├── dm6.idx.fa
+│       ├── dm6.n2g.idx.fa
+│       ├── dm6.rev.1.ebwt
+│       ├── dm6.rev.2.ebwt
+│       ├── dm6.seq
+│       ├── dm6.ti
+│       └── dm6.transcripts.fa
+├── GRCh38.d1.vd1
+│   ├── GRCh38.d1.vd1.dict
+│   ├── GRCh38.d1.vd1.fa
+│   ├── GRCh38.d1.vd1.fa.amb
+│   ├── GRCh38.d1.vd1.fa.ann
+│   ├── GRCh38.d1.vd1.fa.bwt
+│   ├── GRCh38.d1.vd1.fa.fai
+│   ├── GRCh38.d1.vd1.fa.pac
+│   └── GRCh38.d1.vd1.fa.sa
+├── hg18
+│   ├── bowtie2
+│   │   ├── hg18.1.bt2
+│   │   ├── hg18.2.bt2
+│   │   ├── hg18.3.bt2
+│   │   ├── hg18.4.bt2
+│   │   ├── hg18.rev.1.bt2
+│   │   └── hg18.rev.2.bt2
+│   ├── bowtie-index
+│   │   ├── hg18.1.ebwt
+│   │   ├── hg18.2.ebwt
+│   │   ├── hg18.3.ebwt
+│   │   ├── hg18.4.ebwt
+│   │   ├── hg18.rev.1.ebwt
+│   │   └── hg18.rev.2.ebwt
+│   ├── bwa_index
+│   │   ├── hg18.fa.amb
+│   │   ├── hg18.fa.ann
+│   │   ├── hg18.fa.bwt
+│   │   ├── hg18.fa.pac
+│   │   ├── hg18.fa.rbwt
+│   │   ├── hg18.fa.rpac
+│   │   ├── hg18.fa.rsa
+│   │   ├── hg18.fa.sa
+│   │   ├── hg18full.fa.amb
+│   │   ├── hg18full.fa.ann
+│   │   ├── hg18full.fa.bwt
+│   │   ├── hg18full.fa.pac
+│   │   ├── hg18full.fa.rbwt
+│   │   ├── hg18full.fa.rpac
+│   │   ├── hg18full.fa.rsa
+│   │   └── hg18full.fa.sa
+│   ├── genome.fa
+│   ├── genome.fa.fai
+│   ├── hg18.2bit
+│   ├── hg18.gtf
+│   ├── liftover
+│   │   ├── hg18ToHg19.over.chain
+│   │   ├── hg18ToMm8.over.chain
+│   │   └── hg18ToMm9.over.chain
+│   └── rsem
+│       ├── hg18.1.ebwt
+│       ├── hg18.2.ebwt
+│       ├── hg18.3.ebwt
+│       ├── hg18.4.ebwt
+│       ├── hg18.chrlist
+│       ├── hg18.grp
+│       ├── hg18.idx.fa
+│       ├── hg18.n2g.idx.fa
+│       ├── hg18.rev.1.ebwt
+│       ├── hg18.rev.2.ebwt
+│       ├── hg18.seq
+│       ├── hg18.ti
+│       └── hg18.transcripts.fa
+├── hg19
+│   ├── bowtie2
+│   │   ├── hg19.1.bt2
+│   │   ├── hg19.2.bt2
+│   │   ├── hg19.3.bt2
+│   │   ├── hg19.4.bt2
+│   │   ├── hg19.rev.1.bt2
+│   │   └── hg19.rev.2.bt2
+│   ├── bowtie-index
+│   │   ├── hg19.1.ebwt
+│   │   ├── hg19.2.ebwt
+│   │   ├── hg19.3.ebwt
+│   │   ├── hg19.4.ebwt
+│   │   ├── hg19.rev.1.ebwt
+│   │   └── hg19.rev.2.ebwt
+│   ├── bwa_index
+│   │   ├── hg19.amb
+│   │   ├── hg19.ann
+│   │   ├── hg19.bwt
+│   │   ├── hg19.fa.amb
+│   │   ├── hg19.fa.ann
+│   │   ├── hg19.fa.bwt
+│   │   ├── hg19.fa.pac
+│   │   ├── hg19.fa.rbwt
+│   │   ├── hg19.fa.rpac
+│   │   ├── hg19.fa.rsa
+│   │   ├── hg19.fa.sa
+│   │   ├── hg19.pac
+│   │   ├── hg19.rbwt
+│   │   ├── hg19.rpac
+│   │   ├── hg19.rsa
+│   │   └── hg19.sa
+│   ├── dbsnp_138.hg19.vcf
+│   ├── genome.fa
+│   ├── genome.fa.fai
+│   ├── hg19.2bit
+│   ├── hg19.gtf
+│   ├── liftover
+│   │   ├── hg19ToHg18.over.chain
+│   │   ├── hg19ToHg38.over.chain
+│   │   ├── hg19ToMm10.over.chain
+│   │   └── hg19ToMm9.over.chain
+│   └── rsem
+│       ├── hg19.1.ebwt
+│       ├── hg19.2.ebwt
+│       ├── hg19.3.ebwt
+│       ├── hg19.4.ebwt
+│       ├── hg19.chrlist
+│       ├── hg19.grp
+│       ├── hg19.idx.fa
+│       ├── hg19.n2g.idx.fa
+│       ├── hg19.rev.1.ebwt
+│       ├── hg19.rev.2.ebwt
+│       ├── hg19.seq
+│       ├── hg19.ti
+│       └── hg19.transcripts.fa
+├── hg38
+│   ├── bowtie2
+│   │   ├── hg38.1.bt2
+│   │   ├── hg38.2.bt2
+│   │   ├── hg38.3.bt2
+│   │   ├── hg38.4.bt2
+│   │   ├── hg38.rev.1.bt2
+│   │   └── hg38.rev.2.bt2
+│   ├── bowtie-index
+│   │   ├── hg38.1.ebwt
+│   │   ├── hg38.2.ebwt
+│   │   ├── hg38.3.ebwt
+│   │   ├── hg38.4.ebwt
+│   │   ├── hg38.rev.1.ebwt
+│   │   └── hg38.rev.2.ebwt
+│   ├── bwa_index
+│   │   ├── hg38.amb
+│   │   ├── hg38.ann
+│   │   ├── hg38.bwt
+│   │   ├── hg38.pac
+│   │   ├── hg38.rbwt
+│   │   ├── hg38.rpac
+│   │   ├── hg38.rsa
+│   │   └── hg38.sa
+│   ├── genome.fa
+│   ├── genome.fa.fai
+│   ├── hg38.2bit
+│   ├── hg38.gtf
+│   ├── Homo_sapiens.GRCh38.91.gff3
+│   ├── liftover
+│   │   ├── hg38ToHg19.over.chain
+│   │   └── hg38ToMm10.over.chain
+│   └── rsem
+│       ├── hg38.1.ebwt
+│       ├── hg38.2.ebwt
+│       ├── hg38.3.ebwt
+│       ├── hg38.4.ebwt
+│       ├── hg38.chrlist
+│       ├── hg38.grp
+│       ├── hg38.idx.fa
+│       ├── hg38.n2g.idx.fa
+│       ├── hg38.seq
+│       ├── hg38.ti
+│       └── hg38.transcripts.fa
+├── index_GATK_bundle
+│   ├── Homo_sapiens_assembly38
+│   │   ├── Homo_sapiens_assembly38.dict
+│   │   ├── Homo_sapiens_assembly38.fasta
+│   │   ├── Homo_sapiens_assembly38.fasta.amb
+│   │   ├── Homo_sapiens_assembly38.fasta.ann
+│   │   ├── Homo_sapiens_assembly38.fasta.bwt
+│   │   ├── Homo_sapiens_assembly38.fasta.fai
+│   │   ├── Homo_sapiens_assembly38.fasta.pac
+│   │   └── Homo_sapiens_assembly38.fasta.sa
+│   └── ucsc.hg19
+│       ├── ucsc.hg19.dict
+│       ├── ucsc.hg19.fasta
+│       ├── ucsc.hg19.fasta.amb
+│       ├── ucsc.hg19.fasta.ann
+│       ├── ucsc.hg19.fasta.bwt
+│       ├── ucsc.hg19.fasta.fai
+│       ├── ucsc.hg19.fasta.pac
+│       └── ucsc.hg19.fasta.sa
+├── location
+│   ├── all_fasta.loc
+│   ├── annovar.loc
+│   ├── bowtie2_indices.loc
+│   ├── bowtie_indices.loc
+│   ├── bwa_index_color.loc
+│   ├── bwa_index.loc
+│   ├── bwa_mem_index.loc
+│   ├── covacs_bed.loc
+│   ├── covacs_gatk_indexes.loc
+│   ├── covacs_vcf.loc
+│   ├── fasta_indexes.loc
+│   ├── gene_sets.loc
+│   ├── lastz_seqs.loc
+│   ├── liftOver.loc
+│   ├── muse_index.loc
+│   ├── mutect2_indexes.loc
+│   ├── picard_index.loc
+│   ├── rRNA_databases.loc
+│   ├── rsem_indices.loc
+│   ├── tool_data_table_conf.xml
+│   └── tool_data_table_conf.xml.bck
+├── mm10
+│   ├── bowtie2
+│   │   ├── mm10.1.bt2
+│   │   ├── mm10.2.bt2
+│   │   ├── mm10.3.bt2
+│   │   ├── mm10.4.bt2
+│   │   ├── mm10.rev.1.bt2
+│   │   └── mm10.rev.2.bt2
+│   ├── bowtie-index
+│   │   ├── mm10.1.ebwt
+│   │   ├── mm10.2.ebwt
+│   │   ├── mm10.3.ebwt
+│   │   ├── mm10.4.ebwt
+│   │   ├── mm10.rev.1.ebwt
+│   │   └── mm10.rev.2.ebwt
+│   ├── bwa_index
+│   │   ├── mm10.fa
+│   │   ├── mm10.fa.amb
+│   │   ├── mm10.fa.ann
+│   │   ├── mm10.fa.bwt
+│   │   ├── mm10.fa.pac
+│   │   ├── mm10.fa.rbwt
+│   │   ├── mm10.fa.rpac
+│   │   ├── mm10.fa.rsa
+│   │   └── mm10.fa.sa
+│   ├── genome.fa
+│   ├── genome.fa.fai
+│   ├── liftover
+│   │   ├── mm10ToHg19.over.chain
+│   │   └── mm10ToMm9.over.chain
+│   ├── mm10.2bit
+│   ├── mm10.gtf
+│   ├── Mus_musculus.GRCm38.91.gff3
+│   └── rsem
+│       ├── mm10.1.ebwt
+│       ├── mm10.2.ebwt
+│       ├── mm10.3.ebwt
+│       ├── mm10.4.ebwt
+│       ├── mm10.chrlist
+│       ├── mm10.grp
+│       ├── mm10.idx.fa
+│       ├── mm10.n2g.idx.fa
+│       ├── mm10.rev.1.ebwt
+│       ├── mm10.rev.2.ebwt
+│       ├── mm10.seq
+│       ├── mm10.ti
+│       └── mm10.transcripts.fa
+├── mm8
+│   └── liftover
+│       ├── mm8ToHg18.over.chain
+│       ├── mm8ToMm10.over.chain
+│       └── mm8ToMm9.over.chain
+├── mm9
+│   ├── bowtie2
+│   │   ├── mm9.1.bt2
+│   │   ├── mm9.2.bt2
+│   │   ├── mm9.3.bt2
+│   │   ├── mm9.4.bt2
+│   │   ├── mm9.rev.1.bt2
+│   │   └── mm9.rev.2.bt2
+│   ├── bowtie-index
+│   │   ├── mm9.1.ebwt
+│   │   ├── mm9.2.ebwt
+│   │   ├── mm9.3.ebwt
+│   │   ├── mm9.4.ebwt
+│   │   ├── mm9.rev.1.ebwt
+│   │   └── mm9.rev.2.ebwt
+│   ├── bwa_index
+│   │   ├── mm9.fa.amb
+│   │   ├── mm9.fa.ann
+│   │   ├── mm9.fa.bwt
+│   │   ├── mm9.fa.pac
+│   │   ├── mm9.fa.rbwt
+│   │   ├── mm9.fa.rpac
+│   │   ├── mm9.fa.rsa
+│   │   └── mm9.fa.sa
+│   ├── genome.fa
+│   ├── genome.fa.fai
+│   ├── liftover
+│   │   ├── mm9ToHg18.over.chain
+│   │   ├── mm9ToHg19.over.chain
+│   │   ├── mm9ToMm10.over.chain
+│   │   └── mm9ToMm8.over.chain
+│   ├── mm9.2bit
+│   ├── mm9.gtf
+│   └── rsem
+│       ├── mm9.1.ebwt
+│       ├── mm9.2.ebwt
+│       ├── mm9.3.ebwt
+│       ├── mm9.4.ebwt
+│       ├── mm9.chrlist
+│       ├── mm9.grp
+│       ├── mm9.idx.fa
+│       ├── mm9.n2g.idx.fa
+│       ├── mm9.rev.1.ebwt
+│       ├── mm9.rev.2.ebwt
+│       ├── mm9.seq
+│       ├── mm9.ti
+│       └── mm9.transcripts.fa
+├── new_repository
+├── rRNAdatabase
+│   ├── set5-database.fasta
+│   ├── set5-database.fasta.zip
+│   ├── set5-database-reindexed.bursttrie_0.dat
+│   ├── set5-database-reindexed.kmer_0.dat
+│   ├── set5-database-reindexed.pos_0.dat
+│   ├── set5-database-reindexed.stats
+│   ├── set6-database.fasta
+│   ├── set6-database.fasta.zip
+│   ├── set6-database-reindexed.bursttrie_0.dat
+│   ├── set6-database-reindexed.kmer_0.dat
+│   ├── set6-database-reindexed.pos_0.dat
+│   └── set6-database-reindexed.stats
+├── sacCer1
+│   └── liftover
+│       ├── sacCer1ToSacCer2.over.chain
+│       └── sacCer1ToSacCer3.over.chain
+├── sacCer2
+│   └── liftover
+│       └── sacCer2ToSacCer3.over.chain
+├── sacCer3
+│   ├── bowtie2
+│   │   ├── genome.1.bt2
+│   │   ├── genome.2.bt2
+│   │   ├── genome.3.bt2
+│   │   ├── genome.4.bt2
+│   │   ├── genome.rev.1.bt2
+│   │   └── genome.rev.2.bt2
+│   ├── bowtie-index
+│   │   ├── sacCer3.1.ebwt
+│   │   ├── sacCer3.2.ebwt
+│   │   ├── sacCer3.3.ebwt
+│   │   ├── sacCer3.4.ebwt
+│   │   ├── sacCer3.rev.1.ebwt
+│   │   └── sacCer3.rev.2.ebwt
+│   ├── bwa_index
+│   │   ├── sacCer3.fa
+│   │   ├── sacCer3.fa.amb
+│   │   ├── sacCer3.fa.ann
+│   │   ├── sacCer3.fa.bwt
+│   │   ├── sacCer3.fa.pac
+│   │   ├── sacCer3.fa.rbwt
+│   │   ├── sacCer3.fa.rpac
+│   │   ├── sacCer3.fa.rsa
+│   │   └── sacCer3.fa.sa
+│   ├── genome.fa
+│   ├── genome.fa.fai
+│   ├── liftover
+│   │   └── sacCer3ToSacCer2.over.chain
+│   ├── rsem
+│   │   ├── SacCer3.1.ebwt
+│   │   ├── SacCer3.2.ebwt
+│   │   ├── SacCer3.3.ebwt
+│   │   ├── SacCer3.4.ebwt
+│   │   ├── SacCer3.chrlist
+│   │   ├── SacCer3.grp
+│   │   ├── SacCer3.idx.fa
+│   │   ├── SacCer3.n2g.idx.fa
+│   │   ├── SacCer3.rev.1.ebwt
+│   │   ├── SacCer3.rev.2.ebwt
+│   │   ├── SacCer3.seq
+│   │   ├── SacCer3.ti
+│   │   └── SacCer3.transcripts.fa
+│   ├── sacCer3.2bit
+│   ├── sacCer3.gtf
+│   └── Saccharomyces_cerevisiae.R64-1-1.91.gff3
+└── test-content
