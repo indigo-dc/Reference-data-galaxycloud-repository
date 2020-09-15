@@ -1,0 +1,33 @@
+#This is a sample file distributed with Galaxy that enables tools
+#to use a directory bed file for covacs sequences data files. You will need
+#to create these data files and then create a bed_loc.loc file
+#similar to this one (store it in this directory) that points to
+#the directories in which those files are stored. The bed_loc.loc
+#file has this format (longer white space characters are TAB characters):
+#
+#<unique_id>   <dbkey>   <display_name>   <file_path>
+#
+#
+#Note that for backwards compatibility with workflows, the unique ID of
+#an entry must be the path that was in the original loc file, because that
+#is the value stored in the workflow for that parameter. That is why the
+#hg19 entry above looks odd. New genomes can be better-looking.
+#
+
+
+
+
+agilent_sureselectV4	gilent_sureselectV4	agilent_sureselectV4	/cvmfs/elixir-italy.covacs.refdata/bed_file_covacs/S0274956_Padded.bed
+agilent_sureselectV5	agilent_sureselectV5	agilent_sureselectV5	/cvmfs/elixir-italy.covacs.refdata/bed_file_covacs/S04380110_Padded.bed
+agilent_sureselectV5_utr	agilent_sureselectV5_utr	agilent_sureselectV5_utr	/cvmfs/elixir-italy.covacs.refdata/bed_file_covacs/S04380219_Padded.bed
+agilent_sureselectV6	agilent_sureselectV6	agilent_sureselectV6	/cvmfs/elixir-italy.covacs.refdata/bed_file_covacs/S07604514_Padded.bed
+agilent_sureselectV6_cosmic	agilent_sureselectV6_cosmic	agilent_sureselectV6_cosmic	/cvmfs/elixir-italy.covacs.refdata/bed_file_covacs/S07604715_Padded.bed
+agilent_sureselectV6_utr	agilent_sureselectV6_utr	agilent_sureselectV6_utr	/cvmfs/elixir-italy.covacs.refdata/bed_file_covacs/S07604624_Padded.bed
+agilent_sureselect_clinical	agilent_sureselect_clinical	agilent_sureselect_clinical	/cvmfs/elixir-italy.covacs.refdata/bed_file_covacs/S06588914_Padded.bed
+agilent_sureselect_focused	agilent_sureselect_focused	agilent_sureselect_focused	/cvmfs/elixir-italy.covacs.refdata/bed_file_covacs/S07084713_Padded.bed
+agilent_sureselect_inherited	agilent_sureselect_inherited 	agilent_sureselect_inherited	/cvmfs/elixir-italy.covacs.refdata/bed_file_covacs/S0684402_Padded.bed
+illumina_nextera_rapid	illumina_nextera_rapid	illumina_nextera_rapid	/cvmfs/elixir-italy.covacs.refdata/bed_file_covacs/nexterarapidcapture_exome_targetedregions.bed
+illumina_nextera_rapid_expanded	illumina_nextera_rapid_expanded	illumina_nextera_rapid_expanded	/cvmfs/elixir-italy.covacs.refdata/bed_file_covacs/nexterarapidcapture_expandedexome_targetedregions.bed
+illumina_truseq_exome	illumina_truseq_exome	illumina_truseq_exome	/cvmfs/elixir-italy.covacs.refdata/bed_file_covacs/truseq-exome-targeted-regions-manifest-v1-2.bed
+illumina_truseq_rapid_exome	llumina_truseq_rapid_exome	illumina_truseq_rapid_exome	/cvmfs/elixir-italy.covacs.refdata/bed_file_covacs/truseq-rapid-exome-targeted-regions-manifest-v1-2.bed
+
