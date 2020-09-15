@@ -36,16 +36,16 @@
 #is the value stored in the workflow for that parameter. That is why the
 #hg19 entry above looks odd. New genomes can be better-looking.
 #
-at9	at9	Arabidopis thaliana (TAIR9)	/cvmfs/elixir-italy.covacs.refdata/at9/bwa_index/genome.fa
-at10	at10	Arabidopis thaliana (TAIR10)	/cvmfs/elixir-italy.covacs.refdata/at10/bwa_index/genome.fa
-dm3	dm3	Drosophila melanogaster (dm3)	/cvmfs/elixir-italy.covacs.refdata/dm3/bwa_index/dm3.fa
-dm6	dm6	Drosophila melanogaster (dm6)	/cvmfs/elixir-italy.covacs.refdata/dm6/bwa_mem_index/dm6.fa
-hg18	hg18	Homo sapiens (hg18)	/cvmfs/elixir-italy.covacs.refdata/hg18/bwa_index/hg18.fa
-hg19	hg19	Homo sapiens (hg19)	/cvmfs/elixir-italy.covacs.refdata/hg19/bwa_index/hg19.fa
-hg38	hg38	Homo sapiens (hg38)	/cvmfs/elixir-italy.covacs.refdata/hg38/bwa_index/hg38.fa
-mm9	mm9	Mus musculus (mm9)	/cvmfs/elixir-italy.covacs.refdata/mm9/bwa_index/mm9.fa
-mm10	mm10	Mus musculus (mm10)	/cvmfs/elixir-italy.covacs.refdata/mm10/bwa_index/mm10.fa
-sacCer3	sacCer3	Saccharomyces cerevisiae (sacCer3)	/cvmfs/elixir-italy.covacs.refdata/sacCer3/bwa_index/sacCer3.fa
-hg38_gdc	hg38_gdc	GRCh38.d1.vd1.fa	/cvmfs/elixir-italy.covacs.refdata/GRCh38.d1.vd1/GRCh38.d1.vd1.fa
-hg38_bundle	hg38_bundle	hg38_GATK_bundle	/cvmfs/elixir-italy.covacs.refdata/index_GATK_bundle/Homo_sapiens_assembly38/Homo_sapiens_assembly38.fasta
-hg19_bundle	hg19_bundle	hg19_GATK_bundle	/cvmfs/elixir-italy.covacs.refdata/index_GATK_bundle/ucsc.hg19/ucsc.hg19.fasta
+at9	at9	Arabidopis thaliana (TAIR9)	/cvmfs/data.elixir-italy-cvmfs/at9/bwa_index/genome.fa
+at10	at10	Arabidopis thaliana (TAIR10)	/cvmfs/data.elixir-italy-cvmfs/at10/bwa_index/genome.fa
+dm3	dm3	Drosophila melanogaster (dm3)	/cvmfs/data.elixir-italy-cvmfs/dm3/bwa_index/dm3.fa
+dm6	dm6	Drosophila melanogaster (dm6)	/cvmfs/data.elixir-italy-cvmfs/dm6/bwa_mem_index/dm6.fa
+hg18	hg18	Homo sapiens (hg18)	/cvmfs/data.elixir-italy-cvmfs/hg18/bwa_index/hg18.fa
+hg19	hg19	Homo sapiens (hg19)	/cvmfs/data.elixir-italy-cvmfs/hg19/bwa_index/hg19.fa
+hg38	hg38	Homo sapiens (hg38)	/cvmfs/data.elixir-italy-cvmfs/hg38/bwa_index/hg38.fa
+mm9	mm9	Mus musculus (mm9)	/cvmfs/data.elixir-italy-cvmfs/mm9/bwa_index/mm9.fa
+mm10	mm10	Mus musculus (mm10)	/cvmfs/data.elixir-italy-cvmfs/mm10/bwa_index/mm10.fa
+sacCer3	sacCer3	Saccharomyces cerevisiae (sacCer3)	/cvmfs/data.elixir-italy-cvmfs/sacCer3/bwa_index/sacCer3.fa
+hg38_gdc	hg38_gdc	GRCh38.d1.vd1.fa	/cvmfs/data.elixir-italy-cvmfs/GRCh38.d1.vd1/GRCh38.d1.vd1.fa
+hg38_bundle	hg38_bundle	hg38_GATK_bundle	/cvmfs/data.elixir-italy-cvmfs/index_GATK_bundle/Homo_sapiens_assembly38/Homo_sapiens_assembly38.fasta
+hg19_bundle	hg19_bundle	hg19_GATK_bundle	/cvmfs/data.elixir-italy-cvmfs/index_GATK_bundle/ucsc.hg19/ucsc.hg19.fasta

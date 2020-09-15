@@ -23,7 +23,7 @@
 #created via Picard (http://picard.sourceforge.net). Note that
 #the dict file does not have the .fa extension although the
 #path list in the loc file does include it.
-hg38_gdc	hg38_gdc	GRCh38.d1.vd1.fa	/cvmfs/elixir-italy.covacs.refdata/GRCh38.d1.vd1/GRCh38.d1.vd1.fa
-hg38_bundle	hg38_bundle	hg38_GATK_bundle	/cvmfs/elixir-italy.covacs.refdata/index_GATK_bundle/Homo_sapiens_assembly38/Homo_sapiens_assembly38.fasta
-hg19_bundle	hg19_bundle	hg19_GATK_bundle	/cvmfs/elixir-italy.covacs.refdata/index_GATK_bundle/ucsc.hg19/ucsc.hg19.fasta
+hg38_gdc	hg38_gdc	GRCh38.d1.vd1.fa	/cvmfs/data.elixir-italy-cvmfs/GRCh38.d1.vd1/GRCh38.d1.vd1.fa
+hg38_bundle	hg38_bundle	hg38_GATK_bundle	/cvmfs/data.elixir-italy-cvmfs/index_GATK_bundle/Homo_sapiens_assembly38/Homo_sapiens_assembly38.fasta
+hg19_bundle	hg19_bundle	hg19_GATK_bundle	/cvmfs/data.elixir-italy-cvmfs/index_GATK_bundle/ucsc.hg19/ucsc.hg19.fasta
 

@@ -1,6 +1,6 @@
 
 #location of humandb the fields are tab delimited 
-#db	location	/cvmfs/elixir-italy.covacs.refdata/annovardb/humandb_vinyl
+#db	location	/cvmfs/data.elixir-italy-cvmfs/annovardb/humandb_vinyl
 db	location	/annovardb/HumanDBAnnovar	
 
 
